@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人作品集 | My Portfolio</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -36,20 +31,14 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-5 text-center mb-4 mb-md-0">
-                <img src="myFace.jpg" alt="我的照片" class="profile-img rounded-circle shadow-lg">
+                <img src="myFace.jpg" class="profile-img rounded-circle shadow-lg" alt="我的照片">
             </div>
             <div class="col-md-7">
                 <h1 class="display-4 fw-bold">你好，我是張孟澤</h1>
                 <h3 class="text-light">多媒體設計系學生 | 遊戲開發者</h3>
                 <p class="lead mt-4">
-                    熱愛 3D 遊戲開發，擅長 Unity 引擎與 C# 程式設計。
-                    專注於創造沉浸式的冒險與動作遊戲體驗。
+                    熱愛 3D 遊戲開發，擅長 Unity 與 C#。
                 </p>
-                <hr>
-                <h5>🎓 學歷背景</h5>
-                <ul>
-                    <li><strong>臺中科技大學</strong> - 多媒體設計系 (2022 - 2026)</li>
-                </ul>
                 <a href="#works" class="btn btn-primary mt-3">查看我的作品</a>
             </div>
         </div>
@@ -57,85 +46,56 @@
 </section>
 
 <section id="works">
-    
-    <div class="parallax-work" 
-         style="background-image: url('ck_menu_2.jpg');"
-         onclick="openVideoModal(
-         'https://www.youtube.com/embed/8j8Gt2lYs5c', 
-         'Unity 小遊戲開發', 
-         '這是我使用UNITY製作的第一款遊戲。<br>使用 Unity 引擎開發，特色2D玩法融合3D背景的橫向卷軸冒險。<br><br>負責項目：<br>- 角色控制<br>- 怪物 AI'
-        )">
-        
-        <div class="overlay">
-            <h2 class="display-2 fw-bold work-title">鏈結騎士</h2>
-            <p class="fs-4">Unity 2D 動作冒險遊戲</p>
-            <span class="badge bg-light text-dark mt-2">點擊觀看介紹影片</span>
-        </div>
-    </div>
 
-    <div class="parallax-work" 
-         style="background-image: url('gamebg3.png');"
-         onclick="openVideoModal(
-            'https://www.youtube.com/embed/HCF9pUqc18Q',
-            'Unity 第一人稱動作遊戲開發。','<br>使用 Unity 引擎開發，特色為3D大世界<br>以及鉤鎖擺盪元素，<br>並使用各種不同武器消滅威脅，<br>化身為人肉除草機消滅各種植物怪物吧<br><br>負責項目：<br>- 角色控制<br>- 怪物 AI <br>- 武器功能與玩法設計'
-         )">
-        
-        <div class="overlay">
-            <h2 class="display-2 fw-bold work-title">除草機1831</h2>
-            <p class="fs-4">Unity 3D 第一人稱動作冒險遊戲</p>
-            <span class="badge bg-light text-dark mt-2">點擊觀看介紹影片</span>
-        </div>
+<div class="parallax-work"
+     style="background-image: url('ck_menu_2.jpg');"
+     onclick="openVideoModal(
+        'https://www.youtube.com/embed/8j8Gt2lYs5c',
+        'Unity 小遊戲開發',
+        '使用 Unity 製作的 2D 橫向卷軸遊戲。'
+     )">
+    <div class="overlay">
+        <h2 class="display-2 fw-bold work-title">鏈結騎士</h2>
+        <span class="badge bg-light text-dark">點擊觀看影片</span>
     </div>
+</div>
+
+<div class="parallax-work"
+     style="background-image: url('gamebg3.png');"
+     onclick="openVideoModal(
+        'https://www.youtube.com/embed/HCF9pUqc18Q',
+        '除草機1831',
+        '第一人稱鉤鎖動作遊戲。'
+     )">
+    <div class="overlay">
+        <h2 class="display-2 fw-bold work-title">除草機1831</h2>
+        <span class="badge bg-light text-dark">點擊觀看影片</span>
+    </div>
+</div>
 
 </section>
 
-<footer id="footer" class="footer bg-dark text-light">
-    <div class="container py-5">
-        <div class="row align-items-center">
-            
-            <div class="col-md-6 mb-3 mb-md-0">
-                <h5 class="fw-bold">聯絡我</h5>
-                <p class="mb-1">📞 電話：<a href="tel:0968691972" class="footer-link">0968691972    </a></p>
-                <p class="mb-0">✉️ Email：<a href="mailto:hsuaihsien71@gmail.com" class="footer-link">hsuaihsien71@gmail.com</a></p>
-            </div>
-
-            <div class="col-md-6 text-md-end">
-                <p class="mb-0 opacity-75">
-                    © 2026 Zhang Meng Ze<br>
-                    Unity Game Developer Portfolio
-                </p>
-            </div>
-
-        </div>
+<footer class="footer bg-dark text-light">
+    <div class="container py-4">
+        <p class="mb-1">📞 0968691972</p>
+        <p class="mb-0">✉️ hsuaihsien71@gmail.com</p>
     </div>
 </footer>
 
-
-<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content bg-dark text-white"> <div class="modal-body p-0">
-                
-                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" 
-                        data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <div class="row g-0"> <div class="col-lg-8">
-                        <div class="ratio ratio-16x9">
-                            <iframe id="youtubeFrame" src="" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-flex flex-column justify-content-center p-4">
-                        <h3 id="modalTitle" class="fw-bold mb-3">作品標題</h3>
-                        <div id="modalDesc" class="text-light opacity-75">
-                            作品描述...
-                        </div>
-                    </div>
-
-                </div>
+<div class="modal fade" id="videoModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-body">
+                <button class="btn-close btn-close-white float-end" data-bs-dismiss="modal"></button>
+                <h3 id="modalTitle"></h3>
+                <iframe id="youtubeFrame" class="w-100 mt-3" height="400" allowfullscreen></iframe>
+                <p id="modalDesc" class="mt-3"></p>
             </div>
         </div>
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
